@@ -19,17 +19,22 @@ function menuOpen () {
 
 menuOpen ();    
 
-
 function menuBtnShow () {
     let firstScroll = window.pageYOffset;
-    document.getElementById('hamburger').style.top = "10px";
+    document.getElementById('nav').style.top = "0px";
     window.onscroll = function () {
         let lastScroll = window.pageYOffset;
-        if (firstScroll > lastScroll) {
-            document.getElementById('hamburger').style.top = "10px";
+        if (firstScroll > lastScroll ) {
+            document.getElementById('nav').style.top = "0px";
         } else {
-            document.getElementById('hamburger').style.top = "-100px";
-        }
+            if (lastScroll == 0) {
+                document.getElementById('nav').style.top = "0px";
+            } else {
+                document.getElementById('nav').style.top = "-100px";
+            }
+            
+        } 
+
         firstScroll = lastScroll;               
     }
 }
