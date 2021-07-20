@@ -1,0 +1,355 @@
+* {
+    transition: all 0.6s
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.no-scroll {
+    overflow-y: hidden;
+}
+nav {
+    padding: 26px 0;
+    background: #EEEFF1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.container {
+    max-width: 1107px; 
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.nav__links {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__links a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 164.06%;
+    letter-spacing: 0.1em;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 42px;
+}
+.nav__links a:hover {
+    color: #065090;
+}
+
+/* hamburger */
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    display: none;
+    background: transparent;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    
+}
+.hamburger span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #065090;
+    position: absolute;
+    left: 5px;
+}
+.hamburger_active span {
+    background: white;
+}
+.hamburger span:nth-child(1) {
+    top: 12px;
+    width: 35px;
+}
+.hamburger span:nth-child(2) {
+    top: 24px;
+    width: 20px;
+}
+.hamburger span:nth-child(3) {
+    bottom: 12px;
+}
+
+.hamburger_active span:nth-child(1) {
+    width:40px;
+    transform: rotate(45deg);
+    margin-top: 11.7px;
+}
+.hamburger_active span:nth-child(2) {
+    width: 0;
+}
+.hamburger_active span:nth-child(3) {
+    width: 40px;
+    transform: rotate(-45deg);
+    margin-bottom:11.7px;
+}
+
+/* ------- */
+
+header {
+    background: #EEEFF1;
+    padding: 278px 0 195px 0;
+}
+.header__content {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom:  27px;
+}
+header img {
+    width: 47%;
+}
+.header__text {
+    font-size: 16px;
+    line-height: 130%;
+    color: #727272;
+    width: 47%;
+}
+.header__text button {
+    width: 225px;
+    padding: 25px 0;
+    background: #34547A;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 32px;
+    border: solid 1px #34547A;
+}
+.header__text button:hover {
+    background: white;
+    color: #34547A;
+}
+
+
+.about_me {
+    padding: 112px 0 100px 0;
+    background: white;
+}
+.main__content {
+    max-width: 540px;
+    margin: 0 auto;
+}
+.about_me h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin: 21px;
+    text-align: center;
+}
+.about_me p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+
+/* ---------------------- */
+
+
+.progress {
+    background: #34547A;
+    padding: 100px 0;
+}
+.progress__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.progress__item {
+    display: flex;
+    justify-content: space-between;
+}
+.progress span {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    display: block;
+}
+.number {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+.progress__content {
+    margin-left: 20px;
+}
+
+
+/* ------------------------- */
+
+.me {
+    padding: 50px 0;
+}
+.me__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.me__text {
+    width: 45%;
+    max-width: 438px;
+}
+.me img {
+    width: 45%;
+    max-width: 430px;
+    border-radius: 100%;
+    border: 10px solid #34547A;
+}
+.me h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.me h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #34547A;
+    margin-bottom: 30px;
+}
+.me p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.me a {
+    padding: 23px 41px;
+    background: #34547A;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    border: solid #34547A 1px;
+    display: inline-block;
+}
+.me a:hover {
+    color: #34547A;
+    background: white;
+}
+
+
+/* ------------------------------ */
+
+.how-it-works {
+    background: #EEEFF1;
+    padding: 100px 0;
+}
+.video__title {
+    max-width: 540px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.video__title h2 {
+    font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+margin-bottom: 50px;
+}
+.how-it-works p {
+    font-size: 16px;
+line-height: 26px;
+color: #727272
+}
+iframe {
+    width: 90vw;
+    height: 45vw;
+    display: block;
+    margin: 0 auto;
+    max-width: 1100px;
+    max-width: 600px;
+    margin-top: 57px;
+    outline: none;
+}
+
+
+/* ------------------------ */
+
+.feedback {
+    background: #EEEFF1;
+    padding: 100px 0;
+
+}
+.feedback__title {
+    max-width: 540px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.feedback__title h2 {
+    font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+padding-bottom :40px;
+}
+.feedback__title p {
+    font-size: 16px;
+line-height: 26px;
+color: #727272;
+}
+
+/* ------------------------------------------ */
+
+form {
+    max-width: 540px;
+    margin: 30px auto;
+}
+.input-box {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    background: #FFFFFF;
+    padding: 17px 20px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #5F5D5D;
+    width: 47.2%;
+    margin-bottom:20px ;
+}
+textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    font-size: 14px;
+    line-height: 23px;
+    color: #5F5D5D;
+    padding: 17px 20px;
+}
+form button {
+    background: #34547A;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 18px 39px;
+    border: solid #34547A 1px;
+    display: block;
+    margin: 20px auto 0;
+
+}
+form button:hover {
+    color: #34547A;
+    background: white;
+}
+input:focus, textarea:focus {
+    box-shadow: #34547A 0 0 15px;
+}
